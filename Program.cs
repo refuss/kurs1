@@ -1,36 +1,80 @@
 ﻿using System;
-using System.Globalization;
 
-namespace rpg_game
+namespace kurs1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello. Welcome to The Game...");
-            Console.WriteLine("Please choose what do you want to do:");
-            Console.WriteLine("1. Create a character");
-            Console.WriteLine("2. Choose a character");
-            Console.WriteLine("3. Delete a character");
-            Console.WriteLine("4. Logout");
+            Console.WriteLine("Zad.1 \r\n");
+            Console.WriteLine("Employee personal data: ");
+            string name = "Adam";
+            Console.WriteLine("Name: " + name);
+            string surname = "Kowalski";
+            Console.WriteLine("Surname: " + surname);
+            int age = 25;
+            Console.WriteLine("Age: " + age);
+            string sex = "male";
+            Console.WriteLine("Sex: " + sex);
+            long Pesel = 870105002901;
+            Console.WriteLine("PESEL: " + Pesel);
+            int IDcard = 240911;
+            Console.WriteLine("IDcard number: " + IDcard);
 
-            string choice = Console.ReadLine();
+            Console.WriteLine("Zad. 2 \r\n");
+            char one = 'a';
+            char two = 'b';
+            char three = 'c';
+            Console.WriteLine(three);
+            Console.WriteLine(two);
+            Console.WriteLine(one);
 
-            Console.WriteLine($"You've chosen number: {choice}");
+            Console.WriteLine("Zad. 3 \r\n");
+            int d = 10;
+            int e = 15;
+            Console.WriteLine(Math.Sqrt(d * d + e * e));
 
-            int chosenOpt = 0;
-            Int32.TryParse(choice, out chosenOpt);
-            Console.WriteLine("Please choose another option...");
-            choice = Console.ReadLine();
-            Int32.TryParse(choice, out chosenOpt);
+            Console.WriteLine("Zad. 4 \r\n");
+            int f;
+            string g;
+            double h;
+            f = 10;
+            g = "Szkoła DotNeta";
+            h = 12.5;
+            Console.WriteLine(f);
+            Console.WriteLine(g);
+            Console.WriteLine(h);
 
-            if(chosenOpt == 1)
-            {
-                //operacje związane z daną opcją. Tworzymy poprzez dodanie obiektu dla danej rzeczy
-
-            }
-
-
+            Console.WriteLine("zad. 5 \r\n");
+            Console.WriteLine("Please enter your personal data as below:");
+            Console.Write("Name: ");
+            string nm = Console.ReadLine();
+            Console.Write("Surname: ");
+            string srn = Console.ReadLine();
+            Console.Write("Age: ");
+            string age1 = Console.ReadLine();
+            int age2 = Int32.Parse(age1);
+            Console.Write("Weight (kg): ");
+            double weight = double.Parse(Console.ReadLine());
+            Console.Write("Height (cm): ");
+            int height = Int32.Parse(Console.ReadLine());
+            Console.Write("Sex(male/female): ");
+            string sex1 = Console.ReadLine();
+            Console.Write("Shoe number: ");
+            int SN = Int32.Parse(Console.ReadLine());
+            Console.Write("PESEL (11 numbers): ");
+            double Pesel = double.Parse(Console.ReadLine());
+            Console.Write("ID card number (4 digits): ");
+            int Idcard = Int32.Parse(Console.ReadLine());
+            Console.Write("City: ");
+            string city = Console.ReadLine();
+            Console.Write("Adress: ");
+            string adress = Console.ReadLine();
+            Console.Write("Postal Code (only numbers): ");
+            int PC = Int32.Parse(Console.ReadLine());
+            Console.Write("Job: ");
+            string job = Console.ReadLine();
+            Console.Write("Thank you for entering the data");
             Console.ReadKey();
         }
     }
