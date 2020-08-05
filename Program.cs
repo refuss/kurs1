@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace kurs1
 {
@@ -47,46 +47,55 @@ namespace kurs1
 
             Console.WriteLine("zad. 5 \r\n");
             Console.WriteLine("Please enter your personal data as below:");
+            Console.WriteLine("Name: ");
             string name1 = Console.ReadLine();
-            Console.WriteLine("Name: " + name1);
-
+            Console.WriteLine();
+            Console.WriteLine("Surname: ");
             string srn = Console.ReadLine();
-            Console.WriteLine("Surname: " + srn);
-
-            string age1 = Console.ReadLine();
-            int age2 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Age: " + age2);
-
+            Console.WriteLine();
+            Console.WriteLine("Age: ");
+            string age1;
+            int age2 = Int32.Parse(age1);
+            Console.WriteLine();
+            Console.WriteLine("Weight: ");
             string weight = Console.ReadLine();
-            int weight1 = Int32.Parse(weight);
-            Console.WriteLine("Weight: " + weight1);
-
+            double weight1 = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("Weight: ");
             string height = Console.ReadLine();
             int height1 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Height: " + height1);
+            Console.WriteLine("Sex: ");
             string sex1 = Console.ReadLine();
-            Console.WriteLine("Sex: " + sex1);
+            Console.WriteLine();
+            Console.WriteLine("Shoe number: ");
             string ShoeNumber = Console.ReadLine();
             int SN = Int32.Parse(ShoeNumber);
-            Console.WriteLine("Shoe number: " + SN);
+            Console.WriteLine();
+            Console.WriteLine("PESEL: ");
             string Pesel1 = Console.ReadLine();
-            double Pesel2 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("PESEL: " + Pesel2);
+            double Pesel2 = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("ID card number: ");
             string Idc = Console.ReadLine();
             int Idcard = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("ID card number: " + Idcard);
+            Console.WriteLine();
+            Console.WriteLine("Date of birth (format: YYYYMMdd): ");
             string DateOfBirth = Console.ReadLine();
-            int DoB = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Date of birth (without special signs): " + DoB);
+            //DateTime.TryParse(DateOfBirth, out parsedDate)
+            Console.WriteLine();
+            Console.WriteLine("City: ");
             string city = Console.ReadLine();
-            Console.WriteLine("City: " + city);
+            Console.WriteLine();
+            Console.WriteLine("Adress: ");
             string adress = Console.ReadLine();
-            Console.WriteLine("Adress: " + adress);
+            Console.WriteLine();
+            Console.WriteLine("Postal Code: ");
             string PostalCode = Console.ReadLine();
             int PC = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Postal Code: " + PC);
+            Console.WriteLine();
+            Console.WriteLine("Job: ");
             string job = Console.ReadLine();
-            Console.WriteLine("Job: " + job);
+            Console.WriteLine("Thank you for entering the data");
             Console.ReadKey();
         }
     }
